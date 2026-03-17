@@ -29,6 +29,7 @@
   }
 </style>
   <body>
+    <div class="custom-cursor"></div>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <defs>
         <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73Z"/></symbol>
@@ -134,115 +135,116 @@
       </div>
     </header>
     
-    <section style="background-image: url('images/banner1.png');background-repeat: no-repeat;background-size: cover;">
-      <div class="container-lg">
-        <div class="row mb-5">
-          <div class="col-lg-6 pt-5 mt-5">
-            <h2 class="display-1 ls-1"><span class="fw-bold text-primary">Thảm Handmade</span> <span class="fw-bold">giao tận nơi</span></h2>
-            <p class="fs-4">Sợi len mềm mại, được thiết kế riêng cho bạn.</p>
-            <span>Hãy tìm và theo dõi chúng tôi trên các nền tảng mạng xã hội để cập nhật thêm nhiều thông tin hữu ích về sản phẩm.</span>
-            <div class="d-flex gap-3">
-              <a href="#" class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
+    <section>
+      <div id="handmadeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-bg" style="background-image: url('images/banner1.png');"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start">
+              <div class="glass-box">
+                <h5 class="fw-bold">Thảm Handmade – Chạm Vào Không Gian Riêng Của Bạn</h5>
+                <p>Mỗi tấm thảm là một tác phẩm độc đáo, mềm mại và thể hiện phong cách cá nhân của bạn.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-bg" style="background-image: url('images/banner2.png');"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start">
+              <div class="glass-box">
+                  <h5 class="fw-bold">Pin & Móc Khóa Handmade – Góc Nhỏ Đáng Yêu</h5>
+                  <p>Mỗi chiếc là một “bé cưng” được nặn tay tỉ mỉ, xinh xắn và mang theo một chút đáng yêu riêng dành cho bạn.</p>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center align-items-center">
-          <div class="col">
-            <div class="card d-flex justify-content-center border-0 bg-primary rounded-0 pt-3 pb-3 p-2 text-light same-height-vn">
-              <div class="row align-items-center">
-                <div class="col-md-3 text-center">
-                  <svg width="60" height="60"><use xlink:href="#fresh"></use></svg>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body p-0">
-                    <h5 class="text-light">Thảm Handmade – Chạm Vào Không Gian Riêng Của Bạn</h5>
-                    <p class="card-text">Mỗi tấm thảm là một tác phẩm độc đáo, mềm mại và thể hiện phong cách cá nhân của bạn.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card d-flex justify-content-center border-0 bg-secondary rounded-0 pt-3 pb-3 p-2 text-light same-height-vn">
-              <div class="row align-items-center">
-                <div class="col-md-3 text-center">
-                  <svg width="60" height="60"><use xlink:href="#organic"></use></svg>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body p-0">
-                    <h5 class="text-light">100% Handmade</h5>
-                    <p class="card-text">Những tấm thảm tufting mềm mại, làm theo yêu cầu, được chế tác tỉ mỉ cho không gian nhà bạn.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card d-flex justify-content-center border-0 bg-danger rounded-0 pt-3 pb-3 p-2 text-light same-height-vn">
-              <div class="row align-items-center">
-                <div class="col-md-3 text-center">
-                  <svg width="60" height="60"><use xlink:href="#delivery"></use></svg>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body p-0">
-                    <h5 class="text-light">Thảm Tufting giao tận nơi</h5>
-                    <p class="card-text">Mỗi tấm thảm là một tác phẩm riêng cho ngôi nhà của bạn.</p>
-                  </div>
-                  <div class="d-flex gap-2 link-buy mt-2">
-                    <a href="#" target="_blank" class="btn btn-primary rounded-circle p-2">
-                      <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-primary rounded-circle p-2">
-                      <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-primary rounded-circle p-2">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#handmadeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#handmadeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#handmadeCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#handmadeCarousel" data-bs-slide-to="1"></button>
+          <!-- <button type="button" data-bs-target="#handmadeCarousel" data-bs-slide-to="2"></button> -->
         </div>
       </div>
     </section>
 
     <section class="py-5 overflow-hidden">
       <div class="container-lg">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header d-flex flex-wrap justify-content-between mb-5">
-              <h2 class="section-title">Danh mục</h2>
-              <!-- <div class="d-flex align-items-center">
-                <a href="#" class="btn btn-primary me-2">View All</a>
-                <div class="swiper-buttons">
-                  <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
-                  <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
-                </div>
-              </div> -->
+        <h2 class="section-title mb-5 text-center">Danh mục</h2>
+
+        <!-- Nav tabs chính -->
+        <ul class="nav nav-tabs justify-content-center mb-5 category-tabs" id="mainCategoryTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="embroidery-tab" data-bs-toggle="tab" data-bs-target="#embroidery" type="button" role="tab">
+              Thảm Thêu
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="extra-tab" data-bs-toggle="tab" data-bs-target="#extra" type="button" role="tab">
+              Thảm cho pin cái bàn thêm
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab content chính -->
+        <div class="tab-content">
+          <!-- Tab Thảm Thêu -->
+          <div class="tab-pane fade show active" id="embroidery" role="tabpanel">
+            <div class="d-flex justify-content-center flex-wrap mt-4 category-items">
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb1.png" alt="Keyboard" class="category-img">
+                <h5 class="mt-3 category-title">Thảm kê bàn phím Tufting Handmade</h5>
+              </div>
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb2.png" alt="Mouse" class="category-img">
+                <h5 class="mt-3 category-title">Thảm chuột Tufting Handmade</h5>
+              </div>
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb3.png" alt="Handmade" class="category-img">
+                <h5 class="mt-3 category-title">Thảm Tufting Handmade</h5>
+              </div>
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb4.png" alt="Wall" class="category-img">
+                <h5 class="mt-3 category-title">Thảm Treo Tường</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="d-flex justify-content-center">
-              <a href="category.html" class="nav-link text-center mx-5">
-                <img src="images/thumb1.png" class="rounded-circle" alt="Category Thumbnail">
-                <h4 class="fs-6 mt-3 fw-normal category-title">Thảm kê bàn phím Tufting Handmade</h4>
-              </a>
-              <a href="#" class="nav-link text-center mx-5">
-                <img src="images/thumb2.png" class="rounded-circle" alt="Category Thumbnail">
-                <h4 class="fs-6 mt-3 fw-normal category-title">Thảm chuột Tufting Handmade</h4>
-              </a>
-              <a href="#" class="nav-link  text-center mx-5">
-                <img src="images/thumb3.png" class="rounded-circle" alt="Category Thumbnail">
-                <h4 class="fs-6 mt-3 fw-normal category-title">Thảm Tufting Handmade</h4>
-              </a>
-              <a href="#" class="nav-link text-center mx-5">
-                <img src="images/thumb4.png" class="rounded-circle" alt="Category Thumbnail">
-                <h4 class="fs-6 mt-3 fw-normal category-title">Thảm Tufting Treo Tường Cá Nhân Hóa</h4>
-              </a>
+
+          <!-- Tab Thảm cho pin cái bàn thêm -->
+          <div class="tab-pane fade" id="extra" role="tabpanel">
+            <div class="d-flex justify-content-center flex-wrap mt-4 category-items">
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb5.png" alt="Extra" class="category-img">
+                <h5 class="mt-3 category-title">Chế tác Pin</h5>
+                <p class="category-desc">Mỗi chiếc pin là một tác phẩm thủ công, an toàn, giữ màu lâu, dễ thương và cá tính.</p>
+              </div>
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb6.png" alt="Extra" class="category-img">
+                <h5 class="mt-3 category-title">Pin Cute Handmade</h5>
+                <p class="category-desc">Pin nhỏ xinh từ đất sét tự khô, màu tươi sáng, phủ keo chống nước, bền lâu.</p>
+              </div>
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb7.png" alt="Extra" class="category-img">
+                <h5 class="mt-3 category-title">Pin Handmade Bền Đẹp</h5>
+                <p class="category-desc">Đất sét cao cấp + lớp phủ bảo vệ, pin luôn mới, bền màu và xinh xắn.</p>
+              </div>
+              <div class="category-card text-center mx-3 my-3">
+                <img src="images/thumb8.png" alt="Extra" class="category-img">
+                <h5 class="mt-3 category-title">Pin Cá Nhân Hóa</h5>
+                <p class="category-desc">Tùy chỉnh màu sắc và hình dáng, phủ keo chống nước, pin luôn nổi bật và bền bỉ.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -251,14 +253,10 @@
 
     <section class="pb-5">
       <div class="container-lg">
-
         <div class="row">
           <div class="col-md-12">
-
             <div class="section-header d-flex flex-wrap justify-content-between my-4">
-              
               <h2 class="section-title">Bộ sưu tập bán chạy</h2>
-
               <div class="d-flex align-items-center">
                 <a href="#" class="btn btn-primary rounded-1">View All</a>
               </div>
@@ -596,20 +594,20 @@
 
     <section class="pb-4 my-4">
       <div class="container-lg">
-        <div class="bg-warning p-3 rounded-5">
+        <div class="p-3 rounded-5 bg-animate">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-md-6 text-center">
                 <h2 class="mt-2">Đặt hàng dễ dàng qua các ứng dụng</h2>
                 <p>Trải nghiệm đặt hàng trực tuyến nhanh chóng, tiện lợi và đáng tin cậy</p>
                 <div class="d-flex justify-content-center align-items-center gap-2 link-buy mt-2">
-                    <a href="#" target="_blank" class="btn btn-primary rounded-circle p-2">
+                    <a href="https://www.tiktok.com/@tuftycat_rug" target="_blank" class="btn btn-primary rounded-circle p-2">
                       <i class="fa-brands fa-tiktok"></i>
                     </a>
                     <a href="#" target="_blank" class="btn btn-primary rounded-circle p-2">
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" target="_blank" class="btn btn-primary rounded-circle p-2">
+                    <a href="https://www.instagram.com/p/DV-SgMqkb9y/?utm_source=ig_web_button_share_sheet" target="_blank" class="btn btn-primary rounded-circle p-2">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </div>
@@ -640,5 +638,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const cursor = document.querySelector('.custom-cursor');
+
+        // Di chuyển con trỏ theo chuột
+        document.addEventListener('mousemove', (e) => {
+          cursor.style.left = e.clientX + 'px';
+          cursor.style.top = e.clientY + 'px';
+        });
+
+        // Các phần tử cần hover hiệu ứng
+        const hoverTargets = document.querySelectorAll('.category-card, button, a.nav-link');
+
+        hoverTargets.forEach(el => {
+          el.addEventListener('mouseenter', () => {
+            cursor.classList.add('hover-target-hovered');
+          });
+          el.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover-target-hovered');
+          });
+        });
+  </script>
   </body>
 </html>
