@@ -873,3 +873,23 @@ body {
     display: none;
   }
 }
+@media (max-width: 1024px) {
+  .carousel-bg {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    padding: 0 20px; 
+  }
+}
+@media (max-width: 768px) {
+  .carousel-bg {
+    height: 250px; 
+  }
+
+  .carousel-caption {
+    padding: 0 15px;
+    text-align: center; 
+    align-items: center; 
+  }
+}
