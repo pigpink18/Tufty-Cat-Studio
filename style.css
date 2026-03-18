@@ -645,14 +645,12 @@ a.btn-link.text-light:after {
 }
 
 .carousel-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background-size: cover;
+  padding-top: 56.25%; 
   background-position: center;
-  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .carousel-caption {
@@ -875,21 +873,24 @@ body {
 }
 @media (max-width: 1024px) {
   .carousel-bg {
-    height: 400px;
-  }
-
-  .carousel-caption {
-    padding: 0 20px; 
+    padding-top: 50%; /* hơi thấp hơn để vừa iPad */
   }
 }
+
+/* Mobile */
 @media (max-width: 768px) {
   .carousel-bg {
-    height: 250px; 
+    padding-top: 40%; /* nhỏ hơn cho điện thoại */
   }
 
   .carousel-caption {
+    text-align: center;
+    align-items: center;
     padding: 0 15px;
-    text-align: center; 
-    align-items: center; 
+  }
+
+  .glass-box {
+    width: 90%;
+    margin: 0 auto;
   }
 }
