@@ -877,12 +877,19 @@ body {
   .carousel-bg {
     padding-top: 50%; 
   }
+  .carousel-item {
+    position: relative;
+    height: 493px;
+  }
 }
 
 
 @media (max-width: 768px) {
   .carousel-bg {
-    padding-top: 40%;
+    padding-top: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
   }
 
   .carousel-caption {
@@ -895,4 +902,8 @@ body {
     width: 90%;
     margin: 0 auto;
   }
+  .carousel-item {
+    position: relative;
+    height: 193px;
+}
 }
