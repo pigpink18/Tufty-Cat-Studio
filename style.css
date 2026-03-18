@@ -868,3 +868,8 @@ body {
   transform: translate(-50%, -50%) scale(1.2); 
   filter: drop-shadow(0 0 10px #6f42c1);
 }
+@media (max-width: 1024px) {
+  .glass-box {
+    display: none;
+  }
+}
